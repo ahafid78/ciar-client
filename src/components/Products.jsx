@@ -37,7 +37,7 @@ export default function Main({ ProductProps }) {
     return (
         loading ? <h1>Loading ..</h1> :
             <div className='products'>
-              <h2> Choisissez le pack qui vous correspond </h2>  
+              <h2> Articles </h2>  
                 <div className='products-container'>
                     {products?.map((product, index) => {
                         return (
@@ -45,8 +45,9 @@ export default function Main({ ProductProps }) {
                                 
                                 <img className="img"  src={product.image} alt={product.title} width='200px' />
                                 <h3> <span className="title">{product.title}</span> </h3>
+                                <h3 className="categorie">{product.category}</h3>
                                 <div style={{ display: 'flex' }}>
-                                        <h3 className="categorie">{product.category}</h3>
+                                        
                                     {/* <h6>{product.price} </h6> */}
                                     {/* <h6>{product?.rating?.rate}</h6> */}
                                     {/* <h6>{product?.rating?.count}</h6> */}
@@ -55,9 +56,9 @@ export default function Main({ ProductProps }) {
                                     {/*  Lier le button avec le changement route en ajoutant un id dynamique qui viens de l'objet produit */}
                                     <Link to={`/products/${product.id}`}>
                                         {/*  On lie le button avec la function qui store l'objet du produit onclick */}
-                                        <button onClick={(e) => ProductProps(e, product)} id="details">details du produit</button>
+                                        <button onClick={(e) => ProductProps(e, product)} id="details">Details article</button>
                                     </Link>
-                                    <button id="add_to_cart"><a href="https://laciar.com/trouvez-votre-agence" target="_blank">Trouver une agence</a></button>
+                                    <button id="add_to_cart"><a href="#" target="_blank">Fournisseur</a></button>
                                 </div>
                             </div>
 

@@ -13,7 +13,7 @@ export default function Navbar() {
 
                 <div className="qui">
                     <Link to={"/produits"}>
-                            <h3>Nos Produits</h3>
+                            <h3>Inventaires</h3>
                     </Link> 
                 </div>
                 <div className="qui">
