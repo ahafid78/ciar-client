@@ -46,7 +46,7 @@ export default function Main({ ProductProps }) {
                                 <img className="img"  src={product.image} alt={product.title} width='200px' />
                                 <h3> <span className="title">{product.title}</span> </h3>
                                 <div style={{ display: 'flex' }}>
-                               
+                                        <h3 className="categorie">{product.category}</h3>
                                     {/* <h6>{product.price} </h6> */}
                                     {/* <h6>{product?.rating?.rate}</h6> */}
                                     {/* <h6>{product?.rating?.count}</h6> */}

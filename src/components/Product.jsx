@@ -4,19 +4,20 @@ export default function Product({ product }) {
     return (
         <div className="desc">
 
-            <div >
+            
                 <div className="descimg"><img  src={product.image} alt={product.title} width={200} height={200} /></div>
                 
                 <div><h3 ><span className="detitle"> {product.title} </span> </h3></div>
                 <div  style={{ display: 'flex' }}>
+                     <h3 className="categorie">{product.category}</h3>
                     <p><span className="description"> {product.description} </span></p>
-
+                    
                     {/* <h6>{product.price} DA</h6> */}
 
                     {/* <h6>{product?.rating?.rate}</h6>
                     <h6>{product?.rating?.count}</h6> */}
                 </div>
-            </div>
+            
                    
         </div>
     )
