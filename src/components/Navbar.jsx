@@ -39,7 +39,7 @@ export default function Navbar() {
         </nav>    
 
             <Link to={'/products'}>
-                <button className="prod">Tous risque <span className="auto">AUTO</span> </button>
+                <button className="prod">Articles Siege &<span className="auto">stock</span> </button>
             </Link>  
 
             

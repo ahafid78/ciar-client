@@ -44,11 +44,12 @@ export default function Main({ ProductProps }) {
                             <div className="product-card" key={index}>
                                 
                                 <img className="img"  src={product.image} alt={product.title} width='200px' />
-                                <h3> <span className="title">{product.title}</span> </h3>
                                 <h3 className="categorie">{product.category}</h3>
+                                <h3> <span className="title">{product.title}</span> </h3>
+                                
                                 <div style={{ display: 'flex' }}>
                                         
-                                    {/* <h6>{product.price} </h6> */}
+                                    <h6 className="quantite">{product.price} </h6>
                                     {/* <h6>{product?.rating?.rate}</h6> */}
                                     {/* <h6>{product?.rating?.count}</h6> */}
                                 </div>
@@ -56,7 +57,7 @@ export default function Main({ ProductProps }) {
                                     {/*  Lier le button avec le changement route en ajoutant un id dynamique qui viens de l'objet produit */}
                                     <Link to={`/products/${product.id}`}>
                                         {/*  On lie le button avec la function qui store l'objet du produit onclick */}
-                                        <button onClick={(e) => ProductProps(e, product)} id="details">Details article</button>
+                                        <button onClick={(e) => ProductProps(e, product)} id="details">Description</button>
                                     </Link>
                                     <button id="add_to_cart"><a href="#" target="_blank">Fournisseur</a></button>
                                 </div>
