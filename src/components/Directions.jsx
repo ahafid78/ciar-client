@@ -4,7 +4,7 @@ import '../App.css'
 export default function Directions() {
   return (
     <div>
-        Directions
+        <h1>Directions</h1>
     </div>
   )
 }

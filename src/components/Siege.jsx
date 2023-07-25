@@ -4,7 +4,7 @@ import '../App.css'
 export default function Siege() {
   return (
     <div>
-        Siege
+       <h1>Siege</h1> 
     </div>
   )
 }
