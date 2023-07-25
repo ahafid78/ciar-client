@@ -11,11 +11,13 @@ export default function Product({ product }) {
 
                 <h3 className="categorie">{product.category}</h3>
 
+                <h3 className="quantite">{product.price} </h3>
+
                 <div  style={{ display: 'flex' }}>
                     
                     <p><span className="description"> {product.description} </span></p>
                     
-                    {/* <h6>{product.price} DA</h6> */}
+                   
 
                     {/* <h6>{product?.rating?.rate}</h6>
                     <h6>{product?.rating?.count}</h6> */}
