@@ -17,8 +17,18 @@ export default function Navbar() {
                     </Link> 
                 </div>
                 <div className="qui">
+                    <Link to={"/siege"}>
+                            <h3>Siege Hydra</h3>
+                    </Link> 
+                </div>
+                <div className="qui">
+                    <Link to={"/directions"}>
+                            <h3>Directions</h3>
+                    </Link> 
+                </div>
+                <div className="qui">
                     <Link to={"/agences"}>
-                            <h3>Nos Agences CIAR</h3>
+                            <h3>Agences CIAR</h3>
                     </Link> 
                 </div>
                 <div className="qui">

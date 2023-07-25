@@ -1,6 +1,8 @@
 
 import {Route, Routes} from 'react-router-dom'
 import Home from './Home'
+import Siege from './Siege'
+import Directions from './Directions'
 import Agences from './Agences'
 import Product from './Product'
 import Products from './Products'
@@ -12,6 +14,10 @@ export default function MyRoutes({ selectedProduct, ProductProps }) {
 
      <Routes>
         <Route path='/' element={<Home/>} />
+
+        <Route path='/siege' element={<Siege/>} />
+
+        <Route path='/directions' element={<Directions/>} />
 
         <Route path='/agences' element={<Agences/>} />
 

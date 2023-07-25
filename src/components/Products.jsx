@@ -12,9 +12,9 @@ export default function Main({ ProductProps }) {
 
     let BACKEND_URL;
     if (process.env.NODE_ENV == "production") {
-        BACKEND_URL = "https://imprim-server.onrender.com"
+        BACKEND_URL = "https://ciar.onrender.com"
     } else {
-        BACKEND_URL = "http://localhost:7000"
+        BACKEND_URL = "http://localhost:7500"
     }
 
     function getProducts() {
@@ -47,7 +47,7 @@ export default function Main({ ProductProps }) {
                                 <h3> <span className="title">{product.title}</span> </h3>
                                 <div style={{ display: 'flex' }}>
                                
-                                    {/* <h6>{product.price} DA</h6> */}
+                                    {/* <h6>{product.price} </h6> */}
                                     {/* <h6>{product?.rating?.rate}</h6> */}
                                     {/* <h6>{product?.rating?.count}</h6> */}
                                 </div>
